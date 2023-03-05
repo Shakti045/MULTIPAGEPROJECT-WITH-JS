@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelogin.css">
+    <script src="https://kit.fontawesome.com/8fe1021d95.js" crossorigin="anonymous"></script>
+    <title>Simple password verify</title>
+    
+</head>
+<body>
+    <div class="userbox">
+        <h1>User Login</h1>
+        <label for="usermail">Enter your usermail: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; <i  class="fa-solid fa-envelope"></i></label>
+        <input id="usermail" type="email" required>
+        <label for="newpassword">Create a password:&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<i class="fa-solid fa-lock"></i></label>
+        <input id="newpassword" type="password" required>
+        <p id="dis"></p>
+        <label for="confirmpassword">Reenter your password:</label>
+        <input id="confirmpassword" type="password" required>
+        <button id="button" onclick="validate()" type="submit">SUBMIT</button>
+        <p id="display"></p>
+    </div>
+
+    <script src="scriptlogin.js"></script>
+</body>
+</html>
