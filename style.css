@@ -1,0 +1,95 @@
+*{
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url("iamges/background (1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   color: white;
+   
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    background-image: url("https://blog.hubspot.com/hubfs/image8-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    gap: 10px;
+}
+button{
+    background: transparent;
+    color: white;
+    padding: 16px;
+    border-radius: 25px;
+}
+.middle{
+    padding-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+.mobile{
+    display: none;
+}
+.display{
+    display: none;
+}
+
+.clickdisplay{
+    display: block;
+}
+
+@media (max-width:768px) {
+    .middle{
+        padding-top: 30%;
+    }
+    .items{
+        display: none;
+    }
+    .logo{
+        height: 70px;
+        width: 70px;
+        
+    }
+    .mobile{
+        display: block;
+    }
+    .display ul{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .display ul li a{
+        font-size: 15px;
+    }
+    
+    
+}
